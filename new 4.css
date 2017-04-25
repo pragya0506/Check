@@ -14,14 +14,6 @@ if(requiredCurrentDate == requiredPreviousDate || i==0)
 arry.push(requiredCurrentDate); 
 requiredPreviousDate = requiredCurrentDate  ; 
 }
-else
-{
-allDays.push(arry);
-//alert("FINAL ARRAY SINGLE STEP" +allDays);
-var arry = [];
-requiredPreviousDate = requiredCurrentDate  ;
-continue;  
-}
 } */
 //alert("Show Array" +allDays[0], "SECOND" +allDays[0] +"THIR   " +allDays[3]);
 
