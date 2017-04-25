@@ -1,0 +1,80 @@
+<meta http-equiv="Content-Security-Policy: sandbox allow-scripts allow-same-origin" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js https://openweathermap.org/forecast5">
+
+id: '524901',
+
+
+/* for(var i=0;i<=Object.keys($scope.data.list).length;i++)
+{
+var currentDate = $scope.data.list[i].dt_txt;
+var currentDateSplit = currentDate.split(" ");
+var requiredCurrentDate = currentDateSplit[0];
+if(requiredCurrentDate == requiredPreviousDate || i==0)
+{
+//alert("VALUE TO PUSH FIRST ARRAY" +requiredCurrentDate);
+arry.push(requiredCurrentDate); 
+requiredPreviousDate = requiredCurrentDate  ; 
+}
+else
+{
+allDays.push(arry);
+//alert("FINAL ARRAY SINGLE STEP" +allDays);
+var arry = [];
+requiredPreviousDate = requiredCurrentDate  ;
+continue;  
+}
+} */
+//alert("Show Array" +allDays[0], "SECOND" +allDays[0] +"THIR   " +allDays[3]);
+
+
+document.getElementById("myTable").rows[0].cells[0].innerHTML);
+
+var x = document.getElementById("myTable").rows[0].cells.length;
+
+var x = document.getElementById("myTable").rows.length;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(9/5)*C + 32;
+
+
+
+
+var tableLength = document.getElementById("displayTable").rows.length;
+	  if($scope.isCelcius == true)
+	   {
+			for(var i=1; i< tableLength; i++)
+			{
+				var show = document.getElementById("displayTable").rows[i].cells[0].innerHTML;
+				var tempToFaren= ((9/5)* parseInt(show,10))+ 32 +String.fromCharCode(176) +"F";
+				document.getElementById("displayTable").rows[i].cells[0].innerHTML = tempToFaren;
+			}
+			$scope.isCelcius = false;
+	   }
+	   else
+	   {
+			for(var i=1; i< tableLength; i++)
+			{
+				var show = document.getElementById("displayTable").rows[i].cells[0].innerHTML;
+				var tempToFaren= ((5/9)*parseInt(show,10))-32 +String.fromCharCode(176) +"C";
+				document.getElementById("displayTable").rows[i].cells[0].innerHTML = tempToFaren;
+			}
+			$scope.isCelcius = true;
+	   }
+
+
+
+
+
+
+
